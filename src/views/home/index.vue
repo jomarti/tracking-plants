@@ -4,10 +4,10 @@
   </div>
 </template>
 <script>
-import ListPlants from '@/components/ui/ListPlants';
+import ListPlants from '@/views/home/components/ListPlants';
 
 export default {
-  name: 'Home',
+  name: 'HomeView',
   components: {
     ListPlants
   }
