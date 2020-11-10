@@ -6,6 +6,7 @@
     <ul>
       <li>
         <button
+          data-test-id="add-button"
           class="border border-black text-3xl rounded-full py-1 px-3"
           @click="goToCreatePlant"
         >
