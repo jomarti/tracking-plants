@@ -14,6 +14,6 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.firestore();
 
-const myPlantsCollection = database.collection('my plants');
+const myPlantsCollection = database.collection('my-plants');
 
 export { database, myPlantsCollection };
