@@ -44,7 +44,7 @@ export default {
       this.$emit('select-item', item);
     },
     onClickOutsideInput() {
-      this.$emit('clear-items');
+      this.$emit('clear-item');
     }
   }
 };
