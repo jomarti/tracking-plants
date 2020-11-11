@@ -1,6 +1,9 @@
 <template>
-  <section>
-    <h1 class="font-bold text-2xl">Nueva Planta</h1>
+  <section class="mt-20">
+    <div class="flex justify-center">
+      <img class="w-48" src="@/assets/images/cactus.svg" alt="Imagén Cactus" />
+    </div>
+    <h1 class="font-bold text-2xl text-center mt-2">Nueva Planta</h1>
     <form class="mt-8" @submit.prevent="onSubmit">
       <Autocomplete
         :items="plants"
@@ -8,11 +11,7 @@
         @select-item="onSelectItem"
       />
       <div class="flex justify-center mt-8">
-        <button
-          class="border rounded py-2 px-6 bg-green-600 text-white font-bold"
-        >
-          Guardar
-        </button>
+        <TheButton size="large">Guardar</TheButton>
       </div>
     </form>
   </section>
@@ -20,13 +19,15 @@
 
 <script>
 import Autocomplete from '@/components/ui/Autocomplete';
+import TheButton from '@/components/ui/TheButton';
 import { PlantsService } from '@/services';
 import { mapActions } from 'vuex';
 
 export default {
   name: 'AddView',
   components: {
-    Autocomplete
+    Autocomplete,
+    TheButton
   },
   data: () => ({
     plants: [],
