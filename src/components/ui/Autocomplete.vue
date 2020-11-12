@@ -1,16 +1,19 @@
 <template>
   <div class="relative" v-click-outside="onClickOutsideInput">
     <input
+      data-test="autocomplete-input"
       v-model="itemSelected"
       type="text"
       class="border py-1 px-1 capitalize rounded w-full focus:outline-none"
       @input="changeValueAutocomplete"
     />
     <div
+      data-test="wrapper-items-autocomplete"
       class="border max-h-40 overflow-y-scroll absolute w-full bg-white"
       v-if="items.length"
     >
       <span
+        data-test="autocomplete-item"
         v-for="item in items"
         :key="item.id"
         class="block cursor-pointer capitalize py-1 px-1 hover:font-bold hover:bg-gray-200"

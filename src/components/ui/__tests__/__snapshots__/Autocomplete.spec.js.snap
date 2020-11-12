@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Global Components -> ui -> Autocomplete should match snapshot 1`] = `
+<div
+  class="relative"
+>
+  <input
+    class="border py-1 px-1 capitalize rounded w-full focus:outline-none"
+    data-test="autocomplete-input"
+    type="text"
+  />
+   
+  <!---->
+</div>
+`;

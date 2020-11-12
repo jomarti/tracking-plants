@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Global Components -> ui -> TheButton should match snapshot 1`] = `
+<button
+  class="border rounded-full py-2 px-6 font-bold focus:outline-none bg-green-600 text-white w-3/5"
+/>
+`;
